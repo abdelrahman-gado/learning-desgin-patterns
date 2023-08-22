@@ -4,13 +4,13 @@ declare(strict_types=1);
 
 namespace Creational\Factory\Solution;
 
-interface Animal
+interface AnimalInterface
 {
     public function say(string $quote): void;
 }
 
 
-class Tiger implements Animal
+class Tiger implements AnimalInterface
 {
     public function say(string $quote): void
     {
@@ -18,7 +18,7 @@ class Tiger implements Animal
     }
 }
 
-class Duck implements Animal
+class Duck implements AnimalInterface
 {
     public function say(string $quote): void
     {
@@ -29,7 +29,7 @@ class Duck implements Animal
 
 class AnimalFactory
 {
-    public static function getAnimal(string $animalType): Animal
+    public static function getAnimal(string $animalType): AnimalInterface
     {
         $animal = match ($animalType) {
             'TIGER' => new Tiger(),
