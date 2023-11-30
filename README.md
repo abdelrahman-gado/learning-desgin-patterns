@@ -24,4 +24,4 @@
 
 ## Behavioral Pattern
 - these patterns are concerned with communication between objects.
-- concerned with algorithms and the assignment of responsibilities between objects.
+- concerned with algorithms and the assignment of responsibilities between objects..
